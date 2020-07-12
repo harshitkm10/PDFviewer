@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=Google_Analytics_Tracking_Id"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'Google_Analytics_Tracking_Id');
+  </script>
+  <!--End of global site tag-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>PDF viewer</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class="tabs">
+    <div class="nav nav-tabs flex-column" role="tablist">
+      <a class="nav-item nav-link active" data-toggle="tab" href="#full-window" role="tab" aria-controls="full-window" aria-selected="true">Full Window</a>
+      <a class="nav-item nav-link" data-toggle="tab" href="#sized-container" role="tab" aria-controls="sized-container" aria-selected="false">Sized Container</a>
+      <a class="nav-item nav-link" data-toggle="tab" href="#inline" role="tab" aria-controls="inline" aria-selected="false">Inline</a>
+    </div>
+  </div>
+  <div class="content-class">
+      <div class="tab-content py-4 px-4 px-sm-0">
+        <div class="tab-pane fade show active" id="full-window" role="tabpanel" aria-labelledby="full-window-tab">
+          <div id="full-window">
+            <div class="container">
+              <h2>Full Window</h2>      
+              <iframe src="views\Full-Window\index.html" height="600"></iframe>
+            </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="sized-container" role="tabpanel" aria-labelledby="sized-container-tab">
+          <div id="sized-container">
+            <div class="container">
+              <h2>Sized Container</h2>      
+              <iframe src="views\Sized-Container\index.html" height="600"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="inline" role="tabpanel" aria-labelledby="inline-tab">
+          <div id="inline">
+            <div class="container">
+            <h2>Inline</h2>      
+            <iframe src="views\Inline\index.html" height="600"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+</body>
+</html>

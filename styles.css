@@ -1,0 +1,53 @@
+*{
+  all: 0;
+}
+body{
+  display: flex;
+  flex-direction: row;
+  background: #A1FFCE;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.tabs{
+  margin-top: 100px;
+}
+.content-class {
+  margin-left: 30px;
+  margin-right: 15px;
+  width: 80%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 800;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-top: 10px;
+  background: #66aedd;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #66aedd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #66aedd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.nav-link{
+  margin-left: 10px;
+  padding: 15px 56px;
+  text-align: center;
+  background: white;
+  border: 1px solid black !important;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-link:nth-child(even){
+  border-top: 10px;
+  border-bottom: 10px;
+}
+.nav-link[aria-selected="true"]{
+ background-color: black !important;
+ color: white !important;
+}
+.nav-link:hover{
+  background: lightgrey;
+}
+iframe{
+  width: 95%;
+}
+ 
+
+
