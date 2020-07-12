@@ -61,11 +61,3 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
         }
     );
 });
-
-
-// ga('send', {
-//     hitType: 'event',
-//     eventCategory: 'pdf',
-//     eventAction: 'text_copy',
-//     eventLabel:`${event.data.copiedText},${event.data.fileName}`
-//   });
