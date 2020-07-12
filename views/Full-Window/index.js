@@ -15,8 +15,8 @@ const viewerConfig = {
     showAnnotationTools: true, //display annotation tools
     showDownloadPDF : true,  //display download option
     showPrintPDF:true,  //display print option
-    dockPageControls:true,  //user can dock/undock
-    showLeftHandPanel:false //remove other options
+    showLeftHandPanel:false, //remove other options
+    dockPageControls:true  //user can dock/undock
 };
 
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
